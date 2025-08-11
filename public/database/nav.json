@@ -1,0 +1,34 @@
+{
+  "navigation": [
+    {
+      "icon": "ri-dashboard-line",
+      "route": "/",
+      "label": "dashboard"
+    },
+    {
+      "icon": "ri-calendar-event-line",
+      "route": "/brief-program",
+      "label": "brief on current program"
+    },
+    {
+      "icon": "ri-file-list-3-line",
+      "route": "/org-documents",
+      "label": "org documents"
+    },
+    {
+      "icon": "ri-todo-line",
+      "route": "/plan",
+      "label": "plan"
+    },
+    {
+      "icon": "ri-bar-chart-2-line",
+      "route": "/reports",
+      "label": "reports"
+    },
+    {
+      "icon": "ri-file-shield-line",
+      "route": "/tax-exemption-document",
+      "label": "tax exemption document-form 10 BE"
+    }
+  ]
+}

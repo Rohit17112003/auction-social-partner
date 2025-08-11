@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0078d4;
+  --color-secondary: #4d525f;
+  --color-tertiary: #3d48b7;
+  --color-light:#ffffff;
+  --color-dark:#2C2C2C;
+  --color-yellow:#F0C64D;
+  --color-gray:#F7DD90;
+  --color-text:#464646;
+  --color-brown:#634C07;
+  --color-darkyellow:#C6970E;
+  --color-lightyellow:#DDA90F;
+  --color-lightgray:#B8343429;
+  --color-extralightgray:#97757511;
+  --color-pink:#af6b76;
+  --color-red:	#dc2626;
+  --color-darkred:#b91c1c;
+  --color-green:#22c55e;
+  --color-darkgreen:#16a34a;
+}
+
+@layer utilities {
+  .container-bg {
+    @apply rounded-xl bg-white shadow;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+}
