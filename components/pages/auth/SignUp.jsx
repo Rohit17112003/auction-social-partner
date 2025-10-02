@@ -9,7 +9,7 @@ const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
   
   return (
-    <section className="h-auto bg-gradient-to-b from-[#fff6a9c4] to-[#ecd8a2c4]">
+    <section className="h-auto bg-gradient-to-b from-[#FDF3A4] to-[#E7AF0E]">
       <div className="flex flex-col items-center gap-1 pt-4">
         <Image
           className="h-32 w-32 bg-cover"

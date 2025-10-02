@@ -16,11 +16,6 @@
       "label": "org documents"
     },
     {
-      "icon": "ri-todo-line",
-      "route": "/plan",
-      "label": "plan"
-    },
-    {
       "icon": "ri-bar-chart-2-line",
       "route": "/reports",
       "label": "reports"

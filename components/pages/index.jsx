@@ -5,43 +5,35 @@ const HomePage = () => {
   const data = [
     {
       month: "January",
-      amountReceived: 50000,
-      beneficiaries: 120,
-      formsToBeIssued: 30,
-      formsIssued: 25,
-      reportStatus: "completed",
-    },
-    {
-      month: "February",
-      amountReceived: 60000,
-      beneficiaries: 140,
+      amountReceived: "50,00,000 INR",
+      beneficiaries: 23456,
       formsToBeIssued: 20,
-      formsIssued: 20,
+      formsIssued: 2,
+      reportStatus: "Uploaded",
+    },
+    {
+      month: "January",
+      amountReceived: "50,00,000 INR",
+      beneficiaries: 23456,
+      formsToBeIssued: 20,
+      formsIssued: 2,
       reportStatus: "pending",
     },
     {
-      month: "March",
-      amountReceived: 55000,
-      beneficiaries: 130,
-      formsToBeIssued: 25,
-      formsIssued: 22,
-      reportStatus: "completed",
+      month: "January",
+      amountReceived: "50,00,000 INR",
+      beneficiaries: 23456,
+      formsToBeIssued: 20,
+      formsIssued: 2,
+      reportStatus: "Uploaded",
     },
     {
-      month: "April",
-      amountReceived: 58000,
-      beneficiaries: 125,
-      formsToBeIssued: 28,
-      formsIssued: 27,
-      reportStatus: "completed",
-    },
-    {
-      month: "May",
-      amountReceived: 62000,
-      beneficiaries: 150,
-      formsToBeIssued: 18,
-      formsIssued: 17,
-      reportStatus: "pending",
+      month: "January",
+      amountReceived: "50,00,000 INR",
+      beneficiaries: 23456,
+      formsToBeIssued: 20,
+      formsIssued: 2,
+      reportStatus: "Uploaded",
     },
   ];
 
@@ -51,15 +43,15 @@ const HomePage = () => {
       <section className="mt-6 w-full rounded-xl bg-white shadow">
         <SearchBar placeholder="Search here..." />
         <div className="overflow-x-auto">
-          <table className="text-text w-full text-sm whitespace-nowrap min-w-[700px] md:min-w-full">
-            <thead className="bg-gray-100 text-center font-semibold text-xs md:text-sm">
+          <table className="text-[#202224] w-full text-sm whitespace-nowrap min-w-[700px] md:min-w-full font-nunito md:text-lg">
+            <thead className="bg-gray-100 text-centertext-xs md:text-[1rem] ">
               <tr>
-                <th className="px-4 py-4">Month</th>
-                <th className="px-4 py-4">Amount Received</th>
-                <th className="px-4 py-4">Beneficiaries</th>
-                <th className="px-4 py-4">IT Exemption Forms To Be Issued</th>
-                <th className="px-4 py-4">IT Exemption Forms Issued</th>
-                <th className="px-4 py-4">Report Status</th>
+                <th className="px-4 py-4 font-extrabold">Month</th>
+                <th className="px-4 py-4 font-extrabold">Amount Received</th>
+                <th className="px-4 py-4 font-extrabold">Beneficiaries</th>
+                <th className="px-4 py-4 font-extrabold">IT Exemption Forms To Be Issued</th>
+                <th className="px-4 py-4 font-extrabold">IT Exemption Forms Issued</th>
+                <th className="px-4 py-4 font-extrabold">Report Status</th>
               </tr>
             </thead>
             <tbody>
@@ -77,10 +69,10 @@ const HomePage = () => {
                 ) => (
                   <tr
                     key={index}
-                    className={`${index !== data.length - 1 ? "border-b border-lightgray" : ""} text-center`}
+                    className={`${index !== data.length - 1 ? "border-b border-lightgray" : ""} text-center text-[0.95rem] font-nunito font-bold`}
                   >
                     <td className="px-4 py-6 font-medium">{month}</td>
-                    <td className="px-4 py-6 font-medium">₹{amountReceived.toLocaleString()}</td>
+                    <td className="px-4 py-6 font-medium">{amountReceived.toLocaleString()}</td>
                     <td className="px-4 py-6 font-medium">{beneficiaries}</td>
                     <td className="px-4 py-6 font-medium">{formsToBeIssued}</td>
                     <td className="px-4 py-6 font-medium">{formsIssued}</td>
@@ -88,8 +80,8 @@ const HomePage = () => {
                       <span
                         className={`inline-block w-[90%] rounded px-2 py-1 text-sm font-medium capitalize ${
                           reportStatus === "pending"
-                            ? "bg-red-100 text-red-600"
-                            : "bg-teal-100 text-teal-600"
+                            ? "bg-red-100 text-[#E7B010]"
+                            : "bg-teal-100 text-[#00B69B]"
                         }`}
                       >
                         {reportStatus}

@@ -31,7 +31,7 @@ const SimpleImageUploader = ({ height = "9rem", width = "100%", label = "" }) =>
   return (
     <div className="flex flex-col gap-2 w-full items-center">
       <div
-        className="relative rounded-lg flex items-center justify-center bg-lightgray overflow-hidden cursor-pointer"
+        className="relative rounded-lg flex items-center justify-center bg-[#F2F2F2] overflow-hidden cursor-pointer"
         style={{ height, width }}
         onClick={() => {
           if (!image) {
@@ -49,8 +49,8 @@ const SimpleImageUploader = ({ height = "9rem", width = "100%", label = "" }) =>
 
         {!image ? (
           <div className="text-center select-none z-0">
-            <i className="ri-image-line text-2xl text-gray-500" />
-            <p className="text-sm text-gray-500">Click or drag to upload</p>
+            <i className="ri-image-line text-2xl text-[#4D525F]" />
+            <p className="text-sm text-[#4D525F] font-urbanist">Click or drag to upload</p>
           </div>
         ) : (
           <div className="relative w-full h-full">
@@ -71,7 +71,7 @@ const SimpleImageUploader = ({ height = "9rem", width = "100%", label = "" }) =>
       </div>
 
       {/* Label below card */}
-      {label && <p className=" font-semibold text-text text-center text-[1rem] tracking-wide">{label}</p>}
+      {label && <p className=" font-semibold text-[#4D525F] font-urbanist text-center text-[1rem] tracking-wide">{label}</p>}
     </div>
   );
 };

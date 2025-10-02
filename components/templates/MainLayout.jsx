@@ -27,7 +27,7 @@ export default function MainLayout({ children, pageTitle }) {
           setIsSidebarOpen={setIsSidebarOpen}
         />
 
-        <main className="max-w-[100vw] flex-1 overflow-y-auto py-5  md:px-8 px-5 bg-gradient-to-b from-[#fff6a9c4] to-[#ecd8a2c4]">
+        <main className="max-w-[100vw] flex-1 overflow-y-auto bg-gradient-to-b from-[#FFF6A9] to-[#ECD8A2] px-5 py-5 md:px-8">
           {children}
         </main>
       </div>
