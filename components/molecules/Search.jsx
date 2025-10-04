@@ -15,7 +15,7 @@ const SearchBar = ({ placeholder = "Search ID/Location" }) => {
       </div>
 
       {/* Filter Icon with Text */}
-      <div className="flex items-center space-x-2 text-sm text-text">
+      <div className="hidden items-center space-x-2 text-sm text-text">
         <i className="ri-filter-2-line ri-lg font-light text-2xl"></i>
         <span className="text-pink">Filter</span>
       </div>

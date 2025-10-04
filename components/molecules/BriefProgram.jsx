@@ -25,13 +25,13 @@ const BriefProgram = ({ productId }) => {
       </div>
 
       <div className="bg-light rounded-xl p-8">
-        <h1 className="text-dark pb-4 text-xl font-bold tracking-wide md:text-xl">
+        <h1 className="text-dark pb-4 text-[1.2rem] font-semibold font-poppins tracking-wide md:text-xl">
           Our Organization and Works
         </h1>
 
-        <div className="border-yellow rounded-lg border p-6 py-20"></div>
+        <textarea className="border-yellow rounded-lg border p-3  col-span-10 w-full outline-0 " rows="6"></textarea>
 
-        <h1 className="text-dark pt-8 text-xl font-bold tracking-wide">
+        <h1 className="text-dark pt-8 text-[1.2rem] font-semibold font-poppins tracking-wide">
           Pictures of Our Work
         </h1>
         <div className="grid gap-6 py-4 md:grid-cols-3">
