@@ -69,7 +69,7 @@ const Profile = () => {
               Rohit Rana
             </h2>
             <p className="text-secondary font-nunito text-sm">
-              Business Partner
+              Social Partner
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Profile = () => {
               />
             </div>
             <div>
-              <label className="text-secondary text-sm">Business Name</label>
+              <label className="text-secondary text-sm">Social Name</label>
               <input
                 type="text"
                 defaultValue="Cyberize Pvt Ltd"
@@ -132,7 +132,7 @@ const Profile = () => {
               <label className="text-secondary text-sm">Role</label>
               <input
                 type="text"
-                defaultValue="Business Partner"
+                defaultValue="Social Partner"
                 className="border-extralightgray focus:outline-primary font-nunito mt-1 w-full rounded-md border px-3 py-2"
               />
             </div>
